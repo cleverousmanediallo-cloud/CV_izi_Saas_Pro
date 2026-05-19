@@ -13,7 +13,6 @@ export default function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const profileImages = [
-    "` + base64_str + `",
     "Photos images/2kstudio-502@1763228990.jpg",
     "Photos images/Miniature 5 postulats.jpeg",
     "Photos images/WhatsApp Image 2025-11-30 à 22.59.48_cefd7c82.jpg",
@@ -396,7 +395,7 @@ export default function App() {
         </div>
 
         <div className="relative z-10 flex flex-col items-center text-center w-full max-w-4xl pt-32 pb-32">
-          <div className="hero-element w-32 h-32 md:w-40 md:h-40 rounded-3xl bg-textDark border-2 border-accent mb-8 flex items-center justify-center overflow-hidden relative shadow-[0_0_30px_rgba(123,97,255,0.3)]">
+          <div className="hero-element w-64 h-64 md:w-80 md:h-80 rounded-[3rem] bg-textDark border-2 border-accent mb-8 flex items-center justify-center overflow-hidden relative shadow-[0_0_30px_rgba(123,97,255,0.3)]">
             {profileImages.map((imgSrc, index) => (
               <img
                 key={index}
