@@ -29,10 +29,10 @@ if match:
     
     # We need to make sure lucide.createIcons() is called after render.
     # In App.jsx, there is a useEffect with `gsap.context`.
-    # Wait, the standalone html already has `lucide.createIcons()` in a separate useEffect inside App?
-    # No, we will just add it. Let's patch the useEffect in the new app_body.
-    
     app_body_patched = app_body.replace("useEffect(() => {", "useEffect(() => {\n      if (window.lucide) { window.lucide.createIcons(); }", 1)
+    
+    # Map absolute paths back to relative paths for python server
+    app_body_patched = app_body_patched.replace('"/Photos images/', '"public/Photos images/')
     
     lucide_components = """
         const Icon = ({ name, size = 24 }) => {
