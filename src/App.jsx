@@ -798,7 +798,6 @@ export default function App() {
           <span>Disponible pour de nouvelles opportunités</span>
         </div>
         <p>Diallo Ousmane © {new Date().getFullYear()}</p>
-        <p className="mt-2 text-xs opacity-50">Fait avec le vibe coding</p>
       </footer>
 
     </div>
