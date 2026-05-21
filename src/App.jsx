@@ -11,19 +11,9 @@ export default function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const profileImages = [
-    "/Photos images/2kstudio-502@1763228990.jpg",
-    "/Photos images/Miniature 5 postulats.jpeg",
     "/Photos images/WhatsApp Image 2025-11-30 à 22.59.48_cefd7c82.jpg",
     "/Photos images/WhatsApp Image 2025-11-30 à 23.00.59_a8f77c37.jpg",
-    "/Photos images/WhatsApp Image 2025-11-30 à 23.02.16_c25e79c7.jpg",
-    "/Photos images/[000614].jpg",
-    "/Photos images/[001069].jpg",
-    "/Photos images/[001118].png",
-    "/Photos images/[001187].jpg",
-    "/Photos images/[001305].jpg",
-    "/Photos images/[001327].jpg",
-    "/Photos images/[001638].jpg",
-    "/Photos images/im ous.jpeg"
+    "/Photos images/[001118].png"
   ];
 
   useEffect(() => {
@@ -646,7 +636,7 @@ export default function App() {
                     <h3 className="text-lg font-bold text-white">ERP Odoo</h3>
                     <span className="font-mono text-accent text-xs">2026</span>
                   </div>
-                  <p className="text-white/60 font-serif italic text-sm">Truculence Academy - Formation certifiante (en cours)</p>
+                  <p className="text-white/60 font-serif italic text-sm">Truculence Academy - Formation certifiante</p>
                 </div>
 
                 <div className="edu-card bg-white/5 border border-white/10 p-6 rounded-[2rem] hover-lift">
