@@ -150,9 +150,9 @@ export default function App() {
   };
 
   return (
-    <div className="relative font-sans text-background selection:bg-accent selection:text-white min-h-screen">
+    <div className="relative font-sans text-background selection:bg-accent selection:text-white min-h-screen overflow-x-hidden">
       
-            {/* Printable CV Template (Hidden behind the main content) */}
+                  {/* Printable CV Template (Hidden behind the main content) */}
       <div style={{ position: 'absolute', top: 0, left: 0, zIndex: -100, width: '210mm' }}>
           <div id="cv-printable-template" style={{ width: '210mm', minHeight: '297mm', backgroundColor: '#ffffff', display: 'flex', flexDirection: 'row', fontFamily: '"Inter", "Helvetica Neue", Helvetica, Arial, sans-serif' }}>
               {/* Left Column */}
@@ -247,8 +247,22 @@ export default function App() {
                       {/* Exp 1 */}
                       <div style={{ marginBottom: '15px' }}>
                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
+                              <h4 style={{ fontSize: '13px', fontWeight: '800', color: '#2B3A4A', textTransform: 'uppercase' }}>Comptable</h4>
+                              <span style={{ fontSize: '10px', fontWeight: '600', color: '#718096' }}>Juin 2026 - Présent</span>
+                          </div>
+                          <div style={{ fontSize: '11px', fontWeight: '700', color: '#4A5568', marginBottom: '5px' }}>Université Nongo Conakry</div>
+                          <ul style={{ fontSize: '11px', color: '#4A5568', paddingLeft: '15px', margin: 0, lineHeight: '1.4' }}>
+                              <li style={{ marginBottom: '2px' }}>Tenue de la comptabilité générale de l'établissement.</li>
+                              <li style={{ marginBottom: '2px' }}>Suivi et contrôle des encaissements de scolarité.</li>
+                              <li style={{ marginBottom: '2px' }}>Rapprochements bancaires et rapports de trésorerie.</li>
+                          </ul>
+                      </div>
+                      
+                      {/* Exp 2 */}
+                      <div style={{ marginBottom: '15px' }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
                               <h4 style={{ fontSize: '13px', fontWeight: '800', color: '#2B3A4A', textTransform: 'uppercase' }}>Comptable Général</h4>
-                              <span style={{ fontSize: '10px', fontWeight: '600', color: '#718096' }}>Fév 2025 - Présent</span>
+                              <span style={{ fontSize: '10px', fontWeight: '600', color: '#718096' }}>Fév 2025 - Mai 2026</span>
                           </div>
                           <div style={{ fontSize: '11px', fontWeight: '700', color: '#4A5568', marginBottom: '5px' }}>KADA TECHNOLOGIE</div>
                           <ul style={{ fontSize: '11px', color: '#4A5568', paddingLeft: '15px', margin: 0, lineHeight: '1.4' }}>
@@ -258,7 +272,7 @@ export default function App() {
                           </ul>
                       </div>
 
-                      {/* Exp 2 */}
+                      {/* Exp 3 */}
                       <div style={{ marginBottom: '15px' }}>
                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
                               <h4 style={{ fontSize: '13px', fontWeight: '800', color: '#2B3A4A', textTransform: 'uppercase' }}>Créateur de contenu</h4>
@@ -271,7 +285,7 @@ export default function App() {
                           </ul>
                       </div>
 
-                      {/* Exp 3 */}
+                      {/* Exp 4 */}
                       <div style={{ marginBottom: '15px' }}>
                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
                               <h4 style={{ fontSize: '13px', fontWeight: '800', color: '#2B3A4A', textTransform: 'uppercase' }}>Stagiaire</h4>
@@ -292,6 +306,10 @@ export default function App() {
                       </h3>
                       
                       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                          <div style={{ marginBottom: '8px', gridColumn: 'span 2' }}>
+                              <div style={{ fontSize: '12px', fontWeight: '800', color: '#2B3A4A' }}>Structurer les données en Excel & Analyse TCD</div>
+                              <div style={{ fontSize: '10px', color: '#718096' }}>Cabinet VIZDATA (Abidjan) - Depuis Juil 2026 (En cours)</div>
+                          </div>
                           <div style={{ marginBottom: '8px' }}>
                               <div style={{ fontSize: '12px', fontWeight: '800', color: '#2B3A4A' }}>SAP FI/CO</div>
                               <div style={{ fontSize: '10px', color: '#718096' }}>Cabinet PK Consulting (2026)</div>
@@ -334,7 +352,7 @@ export default function App() {
           <button onClick={() => scrollTo('skills')} className="hover:text-accent transition-colors">Compétences</button>
           <button onClick={() => scrollTo('contact')} className="hover:text-accent transition-colors">Contact</button>
         </div>
-        <a href="/CV Diallo Ousmane 2026.pdf" download="CV Diallo Ousmane 2026.pdf" className="magnet-btn bg-accent text-white px-5 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+        <a href="CV Diallo_Ousmane_2026.pdf" download="CV Diallo_Ousmane_2026.pdf" className="magnet-btn bg-accent text-white px-5 py-2 rounded-full text-sm font-medium flex items-center gap-2">
           <span>CV</span>
           <Download size={14} />
         </a>
@@ -386,7 +404,7 @@ export default function App() {
           </div>
 
           <div className="hero-element flex flex-col md:flex-row items-center gap-4">
-            <a href="/CV Diallo Ousmane 2026.pdf" download="CV Diallo Ousmane 2026.pdf" className="magnet-btn bg-accent text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-accent/90 shadow-[0_0_20px_rgba(123,97,255,0.4)]">
+            <a href="CV Diallo_Ousmane_2026.pdf" download="CV Diallo_Ousmane_2026.pdf" className="magnet-btn bg-accent text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-accent/90 shadow-[0_0_20px_rgba(123,97,255,0.4)]">
               Télécharger CV <Download size={18} />
             </a>
             <button onClick={() => scrollTo('contact')} className="magnet-btn bg-transparent border border-white/20 text-white px-8 py-4 rounded-full font-medium hover:bg-white/5">
@@ -428,15 +446,24 @@ export default function App() {
             <div className="space-y-12 md:space-y-24">
               {/* Exp 1 */}
               <div className="exp-card relative flex flex-col md:flex-row items-center w-full">
-                <div className="md:w-1/2 w-full pl-16 md:pl-0 md:pr-16 text-left md:text-right">
-                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem]">
-                    <div className="font-mono text-accent text-sm mb-2">Fév 2025 – Présent</div>
-                    <h3 className="text-xl font-bold text-white mb-1">Comptable Général</h3>
-                    <div className="text-white/60 mb-4 font-serif italic">KADA TECHNOLOGIE</div>
-                    <ul className="text-white/70 text-sm space-y-2 list-none text-left md:text-right">
-                      <li>• Enregistrement des opérations comptables</li>
-                      <li>• Suivi de trésorerie & rapprochements</li>
-                      <li>• Prévisions financières & clôtures</li>
+                <div className="md:w-1/2 w-full pl-16 md:pl-0 md:pr-16 text-left">
+                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem] text-left">
+                    <div className="font-mono text-accent text-sm mb-2">Juin 2026 – Présent</div>
+                    <h3 className="text-xl font-bold text-white mb-1">Comptable</h3>
+                    <div className="text-white/60 mb-4 font-serif italic">Université Nongo Conakry</div>
+                    <ul className="text-white/70 text-sm space-y-2 list-none">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Tenue de la comptabilité générale de l'établissement</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Suivi et contrôle des encaissements de scolarité</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Rapprochements bancaires & rapports de trésorerie</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -449,14 +476,23 @@ export default function App() {
                 <div className="md:w-1/2 w-full hidden md:block"></div>
                 <div className="absolute left-[20px] md:left-1/2 w-4 h-4 rounded-full bg-accent -translate-x-1/2 shadow-[0_0_10px_#7B61FF]"></div>
                 <div className="md:w-1/2 w-full pl-16 md:pl-16 text-left">
-                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem]">
-                    <div className="font-mono text-accent text-sm mb-2">2025 – Présent</div>
-                    <h3 className="text-xl font-bold text-white mb-1">Créateur de Contenu</h3>
-                    <div className="text-white/60 mb-4 font-serif italic">SYSCOHADA</div>
+                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem] text-left">
+                    <div className="font-mono text-accent text-sm mb-2">Fév 2025 – Mai 2026</div>
+                    <h3 className="text-xl font-bold text-white mb-1">Comptable Général</h3>
+                    <div className="text-white/60 mb-4 font-serif italic">KADA TECHNOLOGIE</div>
                     <ul className="text-white/70 text-sm space-y-2 list-none">
-                      <li>• Conception de contenus pédagogiques</li>
-                      <li>• Vulgarisation de concepts financiers</li>
-                      <li>• Création de cas pratiques</li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Enregistrement des opérations comptables</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Suivi de trésorerie & rapprochements</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Prévisions financières & clôtures</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -464,15 +500,24 @@ export default function App() {
 
               {/* Exp 3 */}
               <div className="exp-card relative flex flex-col md:flex-row items-center w-full">
-                <div className="md:w-1/2 w-full pl-16 md:pl-0 md:pr-16 text-left md:text-right">
-                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem]">
-                    <div className="font-mono text-accent text-sm mb-2">Mars 2025 – Avr 2025</div>
-                    <h3 className="text-xl font-bold text-white mb-1">Stagiaire</h3>
-                    <div className="text-white/60 mb-4 font-serif italic">Cabinet Expertise Plus</div>
-                    <ul className="text-white/70 text-sm space-y-2 list-none text-left md:text-right">
-                      <li>• Saisie comptable et classement</li>
-                      <li>• Rapprochements bancaires</li>
-                      <li>• Suivi de caisse</li>
+                <div className="md:w-1/2 w-full pl-16 md:pl-0 md:pr-16 text-left">
+                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem] text-left">
+                    <div className="font-mono text-accent text-sm mb-2">2025 – Présent</div>
+                    <h3 className="text-xl font-bold text-white mb-1">Créateur de Contenu</h3>
+                    <div className="text-white/60 mb-4 font-serif italic">SYSCOHADA</div>
+                    <ul className="text-white/70 text-sm space-y-2 list-none">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Conception de contenus pédagogiques</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Vulgarisation de concepts financiers</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Création de cas pratiques</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -485,37 +530,81 @@ export default function App() {
                 <div className="md:w-1/2 w-full hidden md:block"></div>
                 <div className="absolute left-[20px] md:left-1/2 w-4 h-4 rounded-full bg-accent -translate-x-1/2 shadow-[0_0_10px_#7B61FF]"></div>
                 <div className="md:w-1/2 w-full pl-16 md:pl-16 text-left">
-                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem]">
-                    <div className="font-mono text-accent text-sm mb-2">Juil 2024 – Sep 2024</div>
-                    <h3 className="text-xl font-bold text-white mb-1">Stagiaire chargé de formation</h3>
-                    <div className="text-white/60 mb-4 font-serif italic">Capital Talent Consulting</div>
+                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem] text-left">
+                    <div className="font-mono text-accent text-sm mb-2">Mars 2025 – Avr 2025</div>
+                    <h3 className="text-xl font-bold text-white mb-1">Stagiaire</h3>
+                    <div className="text-white/60 mb-4 font-serif italic">Cabinet Expertise Plus</div>
                     <ul className="text-white/70 text-sm space-y-2 list-none">
-                      <li>• Conception de programmes</li>
-                      <li>• Analyse de données financières</li>
-                      <li>• Tableaux de bord Excel</li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Saisie comptable et classement</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Rapprochements bancaires</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Suivi de caisse</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              
+
               {/* Exp 5 */}
               <div className="exp-card relative flex flex-col md:flex-row items-center w-full">
-                <div className="md:w-1/2 w-full pl-16 md:pl-0 md:pr-16 text-left md:text-right">
-                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem]">
-                    <div className="font-mono text-accent text-sm mb-2">Fév 2024 – Juin 2024</div>
-                    <h3 className="text-xl font-bold text-white mb-1">Stagiaire</h3>
-                    <div className="text-white/60 mb-4 font-serif italic">Africa Elite Consulting</div>
-                    <ul className="text-white/70 text-sm space-y-2 list-none text-left md:text-right">
-                      <li>• Animation de formations</li>
-                      <li>• Supports pédagogiques</li>
-                      <li>• Productivité digitale</li>
+                <div className="md:w-1/2 w-full pl-16 md:pl-0 md:pr-16 text-left">
+                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem] text-left">
+                    <div className="font-mono text-accent text-sm mb-2">Juil 2024 – Sep 2024</div>
+                    <h3 className="text-xl font-bold text-white mb-1">Stagiaire chargé de formation</h3>
+                    <div className="text-white/60 mb-4 font-serif italic">Capital Talent Consulting</div>
+                    <ul className="text-white/70 text-sm space-y-2 list-none">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Conception de programmes</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Analyse de données financières</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Tableaux de bord Excel</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div className="absolute left-[20px] md:left-1/2 w-4 h-4 rounded-full bg-accent -translate-x-1/2 shadow-[0_0_10px_#7B61FF]"></div>
                 <div className="md:w-1/2 w-full hidden md:block"></div>
               </div>
-
+              
+              {/* Exp 6 */}
+              <div className="exp-card relative flex flex-col md:flex-row items-center w-full">
+                <div className="md:w-1/2 w-full hidden md:block"></div>
+                <div className="absolute left-[20px] md:left-1/2 w-4 h-4 rounded-full bg-accent -translate-x-1/2 shadow-[0_0_10px_#7B61FF]"></div>
+                <div className="md:w-1/2 w-full pl-16 md:pl-16 text-left">
+                  <div className="hover-lift bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem] text-left">
+                    <div className="font-mono text-accent text-sm mb-2">Fév 2024 – Juin 2024</div>
+                    <h3 className="text-xl font-bold text-white mb-1">Stagiaire</h3>
+                    <div className="text-white/60 mb-4 font-serif italic">Africa Elite Consulting</div>
+                    <ul className="text-white/70 text-sm space-y-2 list-none">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Animation de formations</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Supports pédagogiques</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Productivité digitale</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -623,6 +712,14 @@ export default function App() {
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-12 tracking-tight text-white">Certifications <span className="text-accent font-serif italic">& Formations</span></h2>
               <div className="space-y-6">
+                <div className="edu-card bg-white/5 border border-white/10 p-6 rounded-[2rem] hover-lift">
+                  <div className="flex justify-between items-start mb-1">
+                    <h3 className="text-lg font-bold text-white">Structurer les données en Excel & Analyse TCD</h3>
+                    <span className="font-mono text-accent text-xs">Juil 2026</span>
+                  </div>
+                  <p className="text-white/60 font-serif italic text-sm">Cabinet VIZDATA (Abidjan) - Depuis le 05 Juillet (En cours de suivi)</p>
+                </div>
+
                 <div className="edu-card bg-white/5 border border-white/10 p-6 rounded-[2rem] hover-lift">
                   <div className="flex justify-between items-start mb-1">
                     <h3 className="text-lg font-bold text-white">SAP Finance & Contrôle (FI/CO)</h3>
@@ -775,7 +872,7 @@ export default function App() {
             </a>
           </div>
           
-          <a href="/CV Diallo Ousmane 2026.pdf" download="CV Diallo Ousmane 2026.pdf" className="magnet-btn inline-block bg-primary text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl">
+          <a href="CV Diallo_Ousmane_2026.pdf" download="CV Diallo_Ousmane_2026.pdf" className="magnet-btn inline-block bg-primary text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl">
             Télécharger mon CV
           </a>
         </div>

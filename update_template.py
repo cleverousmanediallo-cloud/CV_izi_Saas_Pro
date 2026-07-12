@@ -102,8 +102,22 @@ new_printable_cv = """      {/* Printable CV Template (Hidden behind the main co
                       {/* Exp 1 */}
                       <div style={{ marginBottom: '15px' }}>
                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
+                              <h4 style={{ fontSize: '13px', fontWeight: '800', color: '#2B3A4A', textTransform: 'uppercase' }}>Comptable</h4>
+                              <span style={{ fontSize: '10px', fontWeight: '600', color: '#718096' }}>Juin 2026 - Présent</span>
+                          </div>
+                          <div style={{ fontSize: '11px', fontWeight: '700', color: '#4A5568', marginBottom: '5px' }}>Université Nongo Conakry</div>
+                          <ul style={{ fontSize: '11px', color: '#4A5568', paddingLeft: '15px', margin: 0, lineHeight: '1.4' }}>
+                              <li style={{ marginBottom: '2px' }}>Tenue de la comptabilité générale de l'établissement.</li>
+                              <li style={{ marginBottom: '2px' }}>Suivi et contrôle des encaissements de scolarité.</li>
+                              <li style={{ marginBottom: '2px' }}>Rapprochements bancaires et rapports de trésorerie.</li>
+                          </ul>
+                      </div>
+                      
+                      {/* Exp 2 */}
+                      <div style={{ marginBottom: '15px' }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
                               <h4 style={{ fontSize: '13px', fontWeight: '800', color: '#2B3A4A', textTransform: 'uppercase' }}>Comptable Général</h4>
-                              <span style={{ fontSize: '10px', fontWeight: '600', color: '#718096' }}>Fév 2025 - Présent</span>
+                              <span style={{ fontSize: '10px', fontWeight: '600', color: '#718096' }}>Fév 2025 - Mai 2026</span>
                           </div>
                           <div style={{ fontSize: '11px', fontWeight: '700', color: '#4A5568', marginBottom: '5px' }}>KADA TECHNOLOGIE</div>
                           <ul style={{ fontSize: '11px', color: '#4A5568', paddingLeft: '15px', margin: 0, lineHeight: '1.4' }}>
@@ -113,7 +127,7 @@ new_printable_cv = """      {/* Printable CV Template (Hidden behind the main co
                           </ul>
                       </div>
 
-                      {/* Exp 2 */}
+                      {/* Exp 3 */}
                       <div style={{ marginBottom: '15px' }}>
                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
                               <h4 style={{ fontSize: '13px', fontWeight: '800', color: '#2B3A4A', textTransform: 'uppercase' }}>Créateur de contenu</h4>
@@ -126,7 +140,7 @@ new_printable_cv = """      {/* Printable CV Template (Hidden behind the main co
                           </ul>
                       </div>
 
-                      {/* Exp 3 */}
+                      {/* Exp 4 */}
                       <div style={{ marginBottom: '15px' }}>
                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
                               <h4 style={{ fontSize: '13px', fontWeight: '800', color: '#2B3A4A', textTransform: 'uppercase' }}>Stagiaire</h4>
@@ -147,6 +161,10 @@ new_printable_cv = """      {/* Printable CV Template (Hidden behind the main co
                       </h3>
                       
                       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                          <div style={{ marginBottom: '8px', gridColumn: 'span 2' }}>
+                              <div style={{ fontSize: '12px', fontWeight: '800', color: '#2B3A4A' }}>Structurer les données en Excel & Analyse TCD</div>
+                              <div style={{ fontSize: '10px', color: '#718096' }}>Cabinet VIZDATA (Abidjan) - Depuis Juil 2026 (En cours)</div>
+                          </div>
                           <div style={{ marginBottom: '8px' }}>
                               <div style={{ fontSize: '12px', fontWeight: '800', color: '#2B3A4A' }}>SAP FI/CO</div>
                               <div style={{ fontSize: '10px', color: '#718096' }}>Cabinet PK Consulting (2026)</div>
